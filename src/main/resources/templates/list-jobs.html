@@ -11,7 +11,6 @@
   <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
 
   <table th:each="job : ${jobs}" class="job-listing">
-    <tbody>
       <tr>
         <td>ID</td>
         <td th:text="${job.id}"></td>
@@ -26,7 +25,7 @@
       </tr>
       <tr>
         <td>Location</td>
-        <td th:text="${job.location}"></td>-
+        <td th:text="${job.location}"></td>
       </tr>
       <tr>
         <td>Position Type</td>
@@ -36,7 +35,6 @@
         <td>Skill</td>
         <td th:text="${job.coreCompetency}"></td>
       </tr>
-    </tbody>
   </table>
 
 </div>
